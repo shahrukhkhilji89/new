@@ -170,7 +170,6 @@ def banner():
                        `--`---'                                 
                                         
          {m}•{k}•{h}•{sir} Author : Shahrukh khilji {x}{m}•{k}•{h}•{x}''')             
-         {m}•{k}•{h}•{sir} github : https://github.com/shahrukhkhilji89 {x}{m}•{k}•{h}•{x}''')
          {m}•{k}•{h}•{sir} facebook i'd : Shah Rukh {x}{m}•{k}•{h}•{x}''')
 #--------------------[ lover ]--------------#
 def login():
