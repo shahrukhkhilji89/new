@@ -596,8 +596,8 @@ def crack_file():
 		setting()
 #-------------[ PENGATURAN-IDZ ]---------------#
 def setting():
-	print(f'{x}>> 1.  Old I'd ')
-	print('>> 2.  New I'd ')
+	print(f'{x}>> 1.  Old  ')
+	print('>> 2.  New ')
 	print('')
 	hu = input('>> Pilih : ')
 	if hu in ['1','01']:
