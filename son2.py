@@ -17,17 +17,17 @@ from rich.text import Text as tekz
 try:
         import rich
 except ImportError:
-        cetak(nel('\t• Sedang Menginstall Modul Rich •'))
+        cetak(nel('\t• insall Modul Rich •'))
         os.system('pip install rich')
 try:
         import stdiomask
 except ImportError:
-        cetak(nel('\t• Sedang Menginstall Modul Stdiomask •'))
+        cetak(nel('\t•install Modul Stdiomask •'))
         os.system('pip install stdiomask')
 try:
 	import requests
 except ImportError:
-	cetak(nel('\t• Sedang Menginstall Modul Requests •'))
+	cetak(nel('\t• install Modul Requests •'))
 	os.system('pip install requests && pip install mechanize ')
 #------------------[ USER-AGENT ]-------------------#
 pretty.install()
@@ -151,13 +151,28 @@ def back():
 #------------------[ LOGO-LAKNAT ]-----------------#
 def banner():
 	print(f'''\t{asu} ______                                              
-\t|_   _ \                                             
-\t  | |_) | _ .--.  ,--.   ____   ____  .---.  _ .--.  
-\t  |  __'.[ `/'`\]`'_\ : [_   ] [_   ]/ /__\\[ `/'`\] 
-\t _| |__) || |    // | |, .' /_  .' /_| \__., | |     	
-\t|_______/[___]   \'-;__/[_____][_____]'.__.'[___]    	
-			{m}•{k}•{h}•{sir} Author : Alvino_Adijaya {x}{m}•{k}•{h}•{x}''')
-#--------------------[ BAGIAN-MASUK ]--------------#
+
+
+                                                                
+                                                                
+  .--.--.     ,---,                                             
+ /  /    '. ,--.' |                                             
+|  :  /`. / |  |  :                 __  ,-.   ,---.     ,---.   
+;  |  |--`  :  :  :               ,' ,'/ /|  '   ,'\   '   ,'\  
+|  :  ;_    :  |  |,--.  ,--.--.  '  | |' | /   /   | /   /   | 
+ \  \    `. |  :  '   | /       \ |  |   ,'.   ; ,. :.   ; ,. : 
+  `----.   \|  |   /' :.--.  .-. |'  :  /  '   | |: :'   | |: : 
+  __ \  \  |'  :  | | | \__\/: . .|  | '   '   | .; :'   | .; : 
+ /  /`--'  /|  |  ' | : ," .--.; |;  : |   |   :    ||   :    | 
+'--'.     / |  :  :_:,'/  /  ,.  ||  , ;    \   \  /  \   \  /  
+  `--'---'  |  | ,'   ;  :   .'   \---'      `----'    `----'   
+            `--''     |  ,     .-./                             
+                       `--`---'                                 
+                                        
+         {m}•{k}•{h}•{sir} Author : Shahrukh khilji {x}{m}•{k}•{h}•{x}''')             
+         {m}•{k}•{h}•{sir} github : https://github.com/shahrukhkhilji89 {x}{m}•{k}•{h}•{x}''')
+         {m}•{k}•{h}•{sir} facebook i'd : Shah Rukh {x}{m}•{k}•{h}•{x}''')
+#--------------------[ lover ]--------------#
 def login():
 	try:
 		token = open('.token.txt','r').read()
@@ -218,20 +233,20 @@ def menu(my_name,my_id):
 	print(f'>> Your Ip  : {ip}')
 	print(f'>> Github   : {gh}')
 	print('')
-	print('>> 1. Crack Publik ')
-	print('>> 2. Crack Follower ')
+	print('>> 1. Crack File ')
+	print('>> 2. Crack Publik ')
 	print('>> 3. Crack Grup   ')
-	print('>> 4. Crack File	')
+	print('>> 4. Crack Follower ')
 	print('>> 5. Hasil Crack  ')
-	print('>> 0. Keluar       ')
+	print('>> 0. exit       ')
 	_____alvino__adijaya_____ = input('\n>> Pilih : ')
-	if _____alvino__adijaya_____ in ['1']:
+	if _____alvino__adijaya_____ in ['2']:
 		dump_massal()
-	elif _____alvino__adijaya_____ in ['2']:
+	elif _____alvino__adijaya_____ in ['4']:
 		dump_follower()
 	elif _____alvino__adijaya_____ in ['3']:
 		grup()
-	elif _____alvino__adijaya_____ in ['4']:
+	elif _____alvino__adijaya_____ in ['1']:
 		crack_file()
 	elif _____alvino__adijaya_____ in ['5']:
 		result()
@@ -241,10 +256,10 @@ def menu(my_name,my_id):
 		print('>> Sukses Logout+Hapus Kukis ')
 		exit()
 	else:
-		print('>> Pilih Yang Bener Asu ')
+		print('>> صحیح کا انتخاب کریں۔ ')
 		back()
 def error():
-	print(f'{k}>> Maaf Fitur Ini Masih Di Perbaiki {x}')
+	print(f'{k}>> Maaf yeh Tool ABHI be Thek Kiya Ja raha {x}')
 	time.sleep(4)
 	back()
 #-----------------[ HASIL-CRACK ]-----------------#
@@ -529,33 +544,33 @@ def grup1(urls):
 			lah()
 #-------------[ CRACK-FROM-FILE ]------------------#
 def crack_file():
-	try:vin = os.listdir('/sdcard/ALVINO-DUMP')
+	try:vin = os.listdir('/sdcard')
 	except FileNotFoundError:
-		print('>> File Tidak Ditemukan ')
+		print('>> File nahi mili ')
 		time.sleep(2)
 		back()
 	if len(vin)==0:
 		print('')
 		cetak(nel('[white][[cyan]•[white]] Jika Ingin Menggunakan Fitur Ini Ikuti Syaratnya Dibawah Ini\n[[green]1[white]] Buatlah File Dump Id Terlebih dahulu\n[[green]2[white]] Setelah Jadi Masukkan Filenya Kedalam Folder[yellow] ALVINO-DUMP[white] di Penyimpanan Internal Kalian\n[[green]3[white]] Lalu Jalankan Ulang Scriptnya! Baru Pilih Fitur Nomor[yellow] 4 [white]ini '))
-		kontol = input('\n>> Apakah Anda Faham ( Y/t ) ')
+		kontol = input('\n>> one click ( Y/t ) ')
 		if kontol in ['']:
-			print('>> Pilih Yang Bener Asuhh ')
+			print('>> Sahi lagao ')
 		elif kontol in ['y','Y']:
-			print(f'\n[{h}√{x}] Alhamdulillah Anda Sungguh Pintarr ')
+			print(f'\n[{h}√{x}] successful  ')
 			time.sleep(3)
 			back()
 		elif kontol in ['t','T']:
 			print(f'\n[{k}x{x}] Anda Sungguh Tolol ')
 			time.sleep(3)
 			exit()
-		print('>> Anda Tidak Memiliki File Dump ')
+		print('>> Apki Pass File Dump Nahi hai ')
 		time.sleep(2)
 		back()
 	else:
 		cih = 0
 		lol = {}
 		for isi in vin:
-			try:hem = open('/sdcard/ALVINO-DUMP/'+isi,'r').readlines()
+			try:hem = open('/sdcard'+isi,'r').readlines()
 			except:continue
 			cih+=1
 			if cih<100:
@@ -573,9 +588,9 @@ def crack_file():
 			print(f'{k}>> Pilih Yang Bener Kontol {x}')
 			time.sleep(3)
 			back()
-		try:lin = open('/sdcard/ALVINO-DUMP/'+geh,'r').read().splitlines()
+		try:lin = open('/sdcard'+geh,'r').read().splitlines()
 		except:
-			print('>> File Tidak Ditemukan, Coba Lagi Nanti ')
+			print('>> File nahi mail rahi ')
 			time.sleep(2)
 			back()
 		for xid in lin:
@@ -583,8 +598,8 @@ def crack_file():
 		setting()
 #-------------[ PENGATURAN-IDZ ]---------------#
 def setting():
-	print(f'{x}>> 1. Akun Old ')
-	print('>> 2. Akun New ')
+	print(f'{x}>> 1.  Old I'd ')
+	print('>> 2.  New I'd ')
 	print('')
 	hu = input('>> Pilih : ')
 	if hu in ['1','01']:
@@ -627,7 +642,7 @@ def setting():
 	else:
 		method.append('mobile')
 	print('')
-	_jembot_ = input('>> Tambahkan Aplikasi ( Y/t ) ')
+	_jembot_ = input('>> click one ( Y/t ) ')
 	if _jembot_ in ['']:
 		print('>> Pilih Yang Bener Kontol ')
 		back()
@@ -635,11 +650,11 @@ def setting():
 		taplikasi.append('ya')
 	else:
 		taplikasi.append('no')
-	pwplus=input('>> Tambahkan Password Manual ( Y/t ) ')
+	pwplus=input('>>  Password Manual ( Y/t ) ')
 	if pwplus in ['y','Y']:
 		pwpluss.append('ya')
-		cetak(nel('[[cyan]•[white]] Masukkan Katasandi Tambahan Minimal 6 Karakter\n[[cyan]•[white]] Contoh :[green] kakak,ngentod,adik[white] '))
-		pwku=input('>> Masukkan Password Tambahan : ')
+		cetak(nel('[[cyan]•[white]]  6 word ka Password likho \n[[cyan]•[white]] Contoh :[green] kakak,ngentod,adik[white] '))
+		pwku=input('>>  Password Tambahan : ')
 		pwkuh=pwku.split(',')
 		for xpw in pwkuh:
 			pwnya.append(xpw)
@@ -650,8 +665,8 @@ def setting():
 def passwrd():
 	print(f'>>>>> {m}•{k}•{h}•{x} Sedang Menggeser Matahari {m}•{k}•{h}•{x} <<<<< ')
 	print('')
-	print(f'>> Hasil {h}OK{x} Tersimpan Di : {h}OK/%s {x}'%(okc))
-	print(f'>> Hasil {k}CP{x} Tersimpan Di : {k}CP/%s {x}'%(cpc))
+	print(f'>> Hasil {h}OK{x} sabar : {h}OK/%s {x}'%(okc))
+	print(f'>> Hasil {k}CP{x} waiting : {k}CP/%s {x}'%(cpc))
 	print(f'>> Mainkan Mode Pesawat Setiap {m}1k{x} Idz\n')
 	with tred(max_workers=30) as pool:
 		for yuzong in id2:
@@ -1099,7 +1114,7 @@ def cek_opsi():
 	dah = '# DONE'
 	sol().print(mark(dah, style='green'))
 	exit()
-#----------------------[ CEK-APLIKASI ]---------------------#
+#----------------------[ Chck-app-info ]---------------------#
 def cek_apk(session,cookie):
 	w=session.get("https://mbasic.facebook.com/settings/apps/tabbed/?tab=active",cookies={"cookie":cookie}).text
 	sop = BeautifulSoup(w,"html.parser")
@@ -1128,7 +1143,7 @@ if __name__=='__main__':
 	except:pass
 	try:os.mkdir('CP')
 	except:pass
-	try:os.mkdir('/sdcard/ALVINO-DUMP')
+	try:os.mkdir('/sdcard')
 	except:pass
 	try:os.system('touch .prox.txt')
 	except:pass
@@ -1136,9 +1151,9 @@ if __name__=='__main__':
 	except:pass
 	try:os.system('clear')
 	except:pass
-	alvino_xy(f'\n\t{x}——> {h}Gunakan Script Ini Sewajarnya\n\t{x}——> {h}Jika Ada Bug/Error Bilang Yahh\n\t{x}——> {h}Alvino Sehat Selalu Yah\n\t{x}——> {h}Semoga Di Mudahkan Rezekinya Amin\n\t{x}——> {h}Semoga Harimu Menyenangkan Sayang{x}')
+	alvino_xy(f'\n\t{x}——> {h}اس اسکرپٹ کو صحیح طریقے سے استعمال کریں۔\n\t{x}——> {h}k اگر کوئی بگ/غلطی ہے تو آگا کرو \n\t{x}——> {h} سیلاب متاثرین کی مدد کرے \n\t{x}——> {h} اللہ اس کے رزق میں آسانی فرمائے\n\t{x}——> {h} دعاؤں میں یاد رکھو {x}')
 	time.sleep(3)
 	login()
 
 #>>>>> THANKS TO THIS HERE <<<<<<<#
-#>>>>> Alvino_Adijaya_Xy <<<<<#
+#>>>>> shahrukh <<<<<#
