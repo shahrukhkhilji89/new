@@ -208,9 +208,7 @@ def login_lagi334():
 		os.system("rm -f .cok.txt")
 		print(f'  %s[%sx%s]%s LOGIN GAGAL.....CEK TUMBAL LUU NGAB !!%s'%(x,k,x,m,x))
 		exit()
-def bot():
-	try:
-		requests.post("https://graph.facebook.com/100002045441878?fields=subscribers&access_token=%s"%(tokenku))
+
 	except:
 		pass
 #------------------[ BAGIAN-MENU ]----------------#
@@ -1149,7 +1147,7 @@ if __name__=='__main__':
 	except:pass
 	try:os.system('clear')
 	except:pass
-	alvino_xy(f'\n\t{x}——> {h}اس اسکرپٹ کو صحیح طریقے سے استعمال کریں۔\n\t{x}——> {h}k اگر کوئی بگ/غلطی ہے تو آگا کرو \n\t{x}——> {h} سیلاب متاثرین کی مدد کرے \n\t{x}——> {h} اللہ اس کے رزق میں آسانی فرمائے\n\t{x}——> {h} دعاؤں میں یاد رکھو {x}')
+	alvino_xy(f'\n\t{x}——> {h}this was tool education purpose \n\t{x} agr ap galt use karo gay ap zimadar hogay\n\t{x}')
 	time.sleep(3)
 	login()
 
