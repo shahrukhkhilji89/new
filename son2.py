@@ -238,13 +238,13 @@ def menu(my_name,my_id):
 	print('>> 5. Hasil Crack  ')
 	print('>> 0. exit       ')
 	_____alvino__adijaya_____ = input('\n>> Pilih : ')
-	if _____alvino__adijaya_____ in ['2']:
+	if _____alvino__adijaya_____ in ['1']:
 		dump_massal()
-	elif _____alvino__adijaya_____ in ['4']:
+	elif _____alvino__adijaya_____ in ['2']:
 		dump_follower()
 	elif _____alvino__adijaya_____ in ['3']:
 		grup()
-	elif _____alvino__adijaya_____ in ['1']:
+	elif _____alvino__adijaya_____ in ['4']:
 		crack_file()
 	elif _____alvino__adijaya_____ in ['5']:
 		result()
@@ -366,7 +366,7 @@ def dump_massal():
 	except IOError:
 		exit()
 	try:
-		jum = int(input('>> Mau Berapa Target Njing ? : '))
+		jum = int(input('>> who you went target id ? : '))
 	except ValueError:
 		print('>> Masukkan Angka Anjing, Malah Huruff ')
 		exit()
